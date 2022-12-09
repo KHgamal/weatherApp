@@ -6,7 +6,7 @@ import 'package:http/http.dart'as http;
 class WeatherServices{
 //http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=
   String baseUrl="http://api.openweathermap.org/data/2.5";
-  String apiKey="139df59679626e76199274d4397b407a"; //your key
+  String apiKey=""; //your key
 
   Future<WeatherModel> getWeather({required cityName})async {
     Uri url = Uri.parse(
